@@ -1,16 +1,104 @@
-# React + Vite
+# 💻 TecBoard React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web de eventos de tecnologia desenvolvida com **React 19**, como projeto prático para estudo e aplicação de conceitos fundamentais do desenvolvimento Front-End moderno.
 
-Currently, two official plugins are available:
+## 🚀 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O **TecBoard React** é uma aplicação voltada para a criação e gerenciamento de eventos de tecnologia.
 
-## React Compiler
+O projeto está sendo desenvolvido utilizando React e tem como objetivo aplicar, na prática, conceitos como:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Componentização
+* JSX
+* Props
+* Gerenciamento de estado
+* Formulários
+* Renderização dinâmica
+* Eventos e interações
+* Organização de componentes
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React 19
+* JavaScript
+* JSX
+* Vite
+* CSS
+* ESLint
+* Git e GitHub
+
+## 📚 Conceitos praticados
+
+Durante o desenvolvimento, serão explorados conceitos importantes do React, incluindo:
+
+* Criação e reutilização de componentes
+* Comunicação entre componentes com props
+* Gerenciamento de estado com `useState`
+* Manipulação de formulários
+* Actions e formulários no React
+* Renderização condicional
+* Renderização de listas
+* Eventos e interações do usuário
+
+## ▶️ Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você precisa ter o **Node.js** instalado.
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/MilenaAmaral/tecboard-react.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd tecboard-react
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+A aplicação estará disponível no endereço informado pelo Vite no terminal.
+
+## 📂 Estrutura do projeto
+
+```text
+tecboard-react/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
+
+## 🎯 Objetivo
+
+Este projeto faz parte da minha jornada de aprofundamento em **React e desenvolvimento Front-End**, colocando em prática conceitos estudados por meio da construção de uma aplicação funcional.
+
+## 👩‍💻 Desenvolvido por
+
+**Milena Amaral**
+
+[GitHub](https://github.com/MilenaAmaral)

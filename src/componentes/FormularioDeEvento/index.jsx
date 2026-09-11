@@ -6,22 +6,27 @@ import { Label } from "../Label";
 import { CampoDeEntrada } from "../CampoDeEntrada";
 
 export function FormularioDeEvento() {
-    return (
+  return (
     <form className="form-evento">
-        <TituloDoFormulario>
-        Preencha para criar um evento:
-        </TituloDoFormulario>
+      <TituloDoFormulario>Preencha para criar um evento:</TituloDoFormulario>
 
+      <div className="campos">
         <CampoDeFormulario>
-        <Label htmlFor="nome">Qual é o nome do evento?</Label>
+          <Label htmlFor="nomeEvento">Qual é o nome do evento?</Label>
 
-        <CampoDeEntrada
+          <CampoDeEntrada
             type="text"
-            id="nome"
+            id="nomeEvento"
             placeholder="Summer dev hits"
-            name="nome"
-        />
+            name="nomeEvento"
+          />
         </CampoDeFormulario>
+        <CampoDeFormulario>
+          <Label htmlFor="dataEvento">Data do evento</Label>
+
+          <CampoDeEntrada type="date" id="dataEvento" name="dataEvento" />
+        </CampoDeFormulario>
+      </div>
     </form>
-    );
+  );
 }

@@ -1,36 +1,36 @@
-import './App.css'
-import { Banner } from './componentes/Banner'
+import "./App.css";
+import { Banner } from "./componentes/Banner";
 
-import { FormularioDeEvento } from './componentes/FormularioDeEvento'
-import { Tema } from './componentes/Tema'
+import { FormularioDeEvento } from "./componentes/FormularioDeEvento";
+import { Tema } from "./componentes/Tema";
 
 function App() {
   const temas = [
     {
       id: 1,
-      nome: 'front-end',
+      nome: "front-end",
     },
     {
       id: 2,
-      nome: 'back-end',
+      nome: "back-end",
     },
     {
       id: 3,
-      nome: 'DevOps',
+      nome: "DevOps",
     },
     {
       id: 4,
-      nome: 'inteligência artificial',
+      nome: "inteligência artificial",
     },
     {
       id: 5,
-      nome: 'data science',
+      nome: "data science",
     },
     {
       id: 6,
-      nome: 'cloud',
+      nome: "cloud",
     },
-  ]
+  ];
 
   return (
     <main>
@@ -40,8 +40,15 @@ function App() {
 
       <Banner />
       <FormularioDeEvento />
+      {temas.map(function (item) {
+        return (
+          <section key={item.id}>
+            <Tema tema={item} />
+          </section>
+        );
+      })}
 
-      <section>
+     {/* <section>
         <Tema tema={temas[0]} />
       </section>
 
@@ -63,10 +70,9 @@ function App() {
 
       <section>
         <Tema tema={temas[5]} />
-      </section>
+      </section> */}
     </main>
-  )
+  );
 }
 
-export default App
-
+export default App;

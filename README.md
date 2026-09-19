@@ -1,104 +1,78 @@
-# 💻 TecBoard React
+![Capa do projeto](capa.png)
 
-Aplicação web de eventos de tecnologia desenvolvida com **React 19**, como projeto prático para estudo e aplicação de conceitos fundamentais do desenvolvimento Front-End moderno.
+# Tecboard
 
-## 🚀 Sobre o projeto
+Seu hub de eventos de tecnologia! Este projeto foi construído com React e tem como objetivo facilitar a criação e visualização de eventos voltados para temas como Front-end, Back-end, Cloud e muito mais.
 
-O **TecBoard React** é uma aplicação voltada para a criação e gerenciamento de eventos de tecnologia.
+## 🔨 Funcionalidades do projeto
 
-O projeto está sendo desenvolvido utilizando React e tem como objetivo aplicar, na prática, conceitos como:
+- Criação de eventos personalizados com imagem, título, data e tema.
+- Organização dos eventos por tema.
+- Persistência dos dados em memória (estado local do React).
 
-* Componentização
-* JSX
-* Props
-* Gerenciamento de estado
-* Formulários
-* Renderização dinâmica
-* Eventos e interações
-* Organização de componentes
+![Screenshot do projeto](screencapture.png)
 
-## 🛠️ Tecnologias
+## ✔️ Técnicas e tecnologias utilizadas
 
-* React 19
-* JavaScript
-* JSX
-* Vite
-* CSS
-* ESLint
-* Git e GitHub
+- **React + Vite**: Estrutura leve para desenvolvimento com React.
+- **useState**: Para gerenciamento do estado local dos eventos.
+- **Componentização**: Separação clara de responsabilidades por componente.
+- **Formulários com `FormData`**: Captura de dados estruturada.
+- **CSS Modules**: Estilos organizados por componente com escopo local.
+- **Google Fonts (Work Sans + Orbitron)**: Tipografia personalizada.
 
-## 📚 Conceitos praticados
+## 🛠️ Como rodar o projeto
 
-Durante o desenvolvimento, serão explorados conceitos importantes do React, incluindo:
-
-* Criação e reutilização de componentes
-* Comunicação entre componentes com props
-* Gerenciamento de estado com `useState`
-* Manipulação de formulários
-* Actions e formulários no React
-* Renderização condicional
-* Renderização de listas
-* Eventos e interações do usuário
-
-## ▶️ Como executar o projeto
-
-### Pré-requisitos
-
-Antes de começar, você precisa ter o **Node.js** instalado.
-
-### Instalação
-
-Clone o repositório:
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/MilenaAmaral/tecboard-react.git
+git clone https://github.com/seu-usuario/tecboard.git
+cd tecboard
 ```
 
-Entre na pasta do projeto:
-
-```bash
-cd tecboard-react
-```
-
-Instale as dependências:
+2. Instale as dependências:
 
 ```bash
 npm install
 ```
 
-Execute o projeto:
+3. Rode o projeto localmente:
 
 ```bash
 npm run dev
 ```
 
-A aplicação estará disponível no endereço informado pelo Vite no terminal.
+4. Acesse no navegador:
 
-## 📂 Estrutura do projeto
-
-```text
-tecboard-react/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package.json
-├── package-lock.json
-└── vite.config.js
+```
+http://localhost:5173
 ```
 
-## 🎯 Objetivo
+**Imagens disponíveis:**
 
-Este projeto faz parte da minha jornada de aprofundamento em **React e desenvolvimento Front-End**, colocando em prática conceitos estudados por meio da construção de uma aplicação funcional.
+- `imagem_1.png` até `imagem_15.png`
+- `imagem_extra_1.png` até `imagem_extra_15.png`
 
-## 👩‍💻 Desenvolvido por
+**Formato de uso direto no projeto:**
 
-**Milena Amaral**
+```txt
+https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png
+https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_extra_9.png
+```
 
-[GitHub](https://github.com/MilenaAmaral)
+## 📚 Sobre o projeto
+
+Esse projeto foi desenvolvido com fins educacionais para praticar:
+
+- Componentização no React.
+- JSX.
+- Manipulação de formulários e dados.
+- Estilização com CSS.
+- Uso de props e renderização condicional.
+
+Ideal para quem quer dar os primeiros passos em React criando algo visual, interativo e útil.
+
+Se quiser adicionar deploy com Vercel, persistência com LocalStorage ou backend com Firebase, este projeto é uma ótima base para evoluir!
+
+Vida longa e próspera 🖖
+

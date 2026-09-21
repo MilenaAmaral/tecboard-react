@@ -1,78 +1,109 @@
-![Capa do projeto](capa.png)
+# 💻 Tecboard
 
-# Tecboard
+O **Tecboard** é um hub de eventos de tecnologia desenvolvido com React. O projeto permite criar, organizar e visualizar eventos relacionados a diferentes áreas da tecnologia, como Front-end, Back-end, DevOps, Inteligência Artificial, Data Science e Cloud.
 
-Seu hub de eventos de tecnologia! Este projeto foi construído com React e tem como objetivo facilitar a criação e visualização de eventos voltados para temas como Front-end, Back-end, Cloud e muito mais.
+## 🔨 Funcionalidades
 
-## 🔨 Funcionalidades do projeto
-
-- Criação de eventos personalizados com imagem, título, data e tema.
-- Organização dos eventos por tema.
-- Persistência dos dados em memória (estado local do React).
+* Criação de eventos personalizados
+* Cadastro de título, data, imagem e tema
+* Organização dos eventos por tema
+* Listagem dinâmica dos eventos
+* Gerenciamento dos eventos utilizando o estado do React
+* Formulário para cadastro de novos eventos
+* Interface responsiva e componentizada
 
 ![Screenshot do projeto](screencapture.png)
 
-## ✔️ Técnicas e tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
-- **React + Vite**: Estrutura leve para desenvolvimento com React.
-- **useState**: Para gerenciamento do estado local dos eventos.
-- **Componentização**: Separação clara de responsabilidades por componente.
-- **Formulários com `FormData`**: Captura de dados estruturada.
-- **CSS Modules**: Estilos organizados por componente com escopo local.
-- **Google Fonts (Work Sans + Orbitron)**: Tipografia personalizada.
+* **React**
+* **Vite**
+* **JavaScript**
+* **JSX**
+* **useState**
+* **FormData**
+* **Componentização**
+* **Props**
+* **CSS**
+* **Google Fonts**
 
-## 🛠️ Como rodar o projeto
+## 📂 Estrutura do projeto
 
-1. Clone o repositório:
+O projeto foi organizado em componentes para facilitar a manutenção e separar as responsabilidades da aplicação.
 
-```bash
-git clone https://github.com/seu-usuario/tecboard.git
-cd tecboard
+```text
+src/
+├── componentes/
+│   ├── Banner/
+│   ├── CardEvento/
+│   ├── FormularioDeEvento/
+│   └── Tema/
+├── App.jsx
+├── App.css
+└── index.css
 ```
 
-2. Instale as dependências:
+## 🛠️ Como executar o projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/MilenaAmaral/tecboard-react.git
+```
+
+### 2. Acesse a pasta
+
+```bash
+cd tecboard-react
+```
+
+### 3. Instale as dependências
 
 ```bash
 npm install
 ```
 
-3. Rode o projeto localmente:
+### 4. Inicie o projeto
 
 ```bash
 npm run dev
 ```
 
-4. Acesse no navegador:
+### 5. Acesse no navegador
 
-```
+```text
 http://localhost:5173
 ```
 
-**Imagens disponíveis:**
+## 🖼️ Imagens dos eventos
 
-- `imagem_1.png` até `imagem_15.png`
-- `imagem_extra_1.png` até `imagem_extra_15.png`
+O projeto utiliza imagens disponibilizadas pelo repositório de assets do projeto.
 
-**Formato de uso direto no projeto:**
+Exemplos:
 
-```txt
+```text
 https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png
+
 https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_extra_9.png
 ```
 
 ## 📚 Sobre o projeto
 
-Esse projeto foi desenvolvido com fins educacionais para praticar:
+O **Tecboard** foi desenvolvido como parte dos meus estudos em **React na Alura**, com o objetivo de colocar em prática conceitos fundamentais do desenvolvimento de interfaces com React.
 
-- Componentização no React.
-- JSX.
-- Manipulação de formulários e dados.
-- Estilização com CSS.
-- Uso de props e renderização condicional.
+Durante o desenvolvimento, trabalhei conceitos como:
 
-Ideal para quem quer dar os primeiros passos em React criando algo visual, interativo e útil.
+* Componentização
+* JSX
+* Props
+* Manipulação de formulários
+* FormData
+* Gerenciamento de estado com `useState`
+* Renderização de listas
+* Eventos e ações de formulário
+* Imutabilidade
+* Estilização com CSS
 
-Se quiser adicionar deploy com Vercel, persistência com LocalStorage ou backend com Firebase, este projeto é uma ótima base para evoluir!
+Além de acompanhar os conteúdos estudados, utilizei o projeto como oportunidade para praticar a organização de componentes e compreender melhor o fluxo de dados e a interação entre formulário, estado e interface.
 
-Vida longa e próspera 🖖
-
+Este projeto faz parte da minha jornada de estudos e evolução como desenvolvedora.

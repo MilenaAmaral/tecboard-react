@@ -14,6 +14,11 @@ export function CardEvento({ evento }) {
                 <h4 className="titulo">
                     {evento.titulo}
                 </h4>
+                {evento.descricao && (
+                    <p className="descricao">
+                        {evento.descricao}
+                    </p>
+                )}
             </div>
         </div>
     )

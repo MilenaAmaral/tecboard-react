@@ -1,9 +1,51 @@
 body {
   margin: 0;
 }
+
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 header {
   background-color: #06151A;
-  padding: 32px;
+  padding: 32px 24px;
   display: flex;
   justify-content: center;
+}
+
+header img {
+  display: block;
+  width: min(100%, 238px);
+  height: auto;
+}
+
+.lista-eventos {
+  width: min(100% - 48px, 1200px);
+  margin: 0 auto;
+  padding: 0 0 96px;
+}
+
+.secao-tema {
+  margin-top: 64px;
+}
+
+.grade-eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 282px));
+  gap: 24px;
+}
+
+@media (max-width: 600px) {
+  .lista-eventos {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .secao-tema {
+    margin-top: 48px;
+  }
+
+  .grade-eventos {
+    grid-template-columns: 1fr;
+  }
 }

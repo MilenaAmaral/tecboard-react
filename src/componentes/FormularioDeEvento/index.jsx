@@ -7,6 +7,10 @@ import { Botao } from "../Botao";
 import { ListaSuspensa } from "../ListaSuspensa";
 
 export function FormularioDeEvento({ temas, aoSubmeter }) {
+  function criarDataLocal(valor) {
+    return new Date(`${valor}T12:00:00`);
+  }
+
   function aoFormSubmetido(formData) {
     console.log("Formulário submetido", formData);
     const evento = {
@@ -14,7 +18,7 @@ export function FormularioDeEvento({ temas, aoSubmeter }) {
       tema: temas.find(function (item) {
         return item.id == formData.get("tema");
       }),
-      data: new Date(formData.get("dataEvento")),
+      data: criarDataLocal(formData.get("dataEvento")),
       titulo: formData.get("nomeEvento"),
     };
     aoSubmeter(evento);

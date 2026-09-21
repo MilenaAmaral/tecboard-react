@@ -2,6 +2,8 @@
 
 O **Tecboard** é um hub de eventos de tecnologia desenvolvido com React. O projeto permite criar, organizar e visualizar eventos relacionados a diferentes áreas da tecnologia, como Front-end, Back-end, DevOps, Inteligência Artificial, Data Science e Cloud.
 
+🚀 Acesse o projeto online:
+https://tecboard-react-roan.vercel.app/
 ## 🔨 Funcionalidades
 
 * Criação de eventos personalizados

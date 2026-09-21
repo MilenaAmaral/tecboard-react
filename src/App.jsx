@@ -1,81 +1,90 @@
-import './App.css'
-import { Banner } from './componentes/Banner'
-import { CardEvento } from './componentes/CardEvento'
-import { FormularioDeEvento } from './componentes/FormularioDeEvento'
-import { Tema } from './componentes/Tema'
-// no react, componentes são FUNÇÕES
+import { useState } from "react";
+import "./App.css";
+
+import { Banner } from "./componentes/Banner";
+import { CardEvento } from "./componentes/CardEvento";
+import { FormularioDeEvento } from "./componentes/FormularioDeEvento";
+import { Tema } from "./componentes/Tema";
+
+// No React, componentes são funções
 
 function App() {
-
   const temas = [
     {
       id: 1,
-      nome: 'front-end'
+      nome: "front-end",
     },
     {
       id: 2,
-      nome: 'back-end'
+      nome: "back-end",
     },
     {
       id: 3,
-      nome: 'devops'
+      nome: "devops",
     },
     {
       id: 4,
-      nome: 'inteligência artificial'
+      nome: "inteligência artificial",
     },
     {
       id: 5,
-      nome: 'data science'
+      nome: "data science",
     },
     {
       id: 6,
-      nome: 'cloud'
+      nome: "cloud",
     },
-  ]
+  ];
 
-  const eventos = [
+  const [eventos, setEventos] = useState([
     {
-      capa: 'https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png',
+      capa: "https://raw.githubusercontent.com/viniciosneves/tecboard-assets/refs/heads/main/imagem_1.png",
       tema: temas[0],
       data: new Date(),
-      titulo: 'Mulheres no Front'
-    }
-  ]
+      titulo: "Mulheres no Front",
+    },
+  ]);
+
+  function adicionarEvento(evento) {
+    setEventos((eventos) => [...eventos, evento]);
+    console.log("evento => ", evento);
+  }
 
   return (
     <main>
       <header>
-        <img src="/logo.png" alt="" />
+        <img src="/logo.png" alt="Logo Tecboard" />
       </header>
+
       <Banner />
-      <FormularioDeEvento temas={temas} />
+
+      <FormularioDeEvento
+        temas={temas}
+        aoSubmeter={adicionarEvento}
+      />
+
       {temas.map(function (item) {
         return (
           <section key={item.id}>
             <Tema tema={item} />
-            <CardEvento evento={eventos[0]}/>
-          </section>
-        )
-      })}
 
-      {/* <section>
-        <Tema tema={temas[1]} />
-      </section>
-      <section>
-        <Tema tema={temas[2]} />
-      </section>
-      <section>
-        <Tema tema={temas[3]} />
-      </section>
-      <section>
-        <Tema tema={temas[4]} />
-      </section>
-      <section>
-        <Tema tema={temas[5]} />
-      </section> */}
+            {eventos
+              .filter(function (evento) {
+                return evento.tema.id === item.id;
+              })
+              .map(function (evento, index) {
+                return (
+                  <CardEvento
+                    evento={evento}
+                    key={index}
+                  />
+                );
+              })}
+          </section>
+        );
+      })}
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
